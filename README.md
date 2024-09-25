@@ -164,9 +164,6 @@ Before beginning the setup process, ensure you have:
 
 - **Operating System**: A Linux distribution (Ubuntu, Debian, Fedora, CentOS, Arch Linux, etc.).
 - **Access Rights**: Root or `sudo` access.
-- **Hardware Requirements**:
-  - At least **16GB of RAM** (8GB minimum, but 16GB recommended).
-  - **20GB of free disk space**.
 - **Installed Software**:
   - **Git**: Install using your distribution's package manager.
   - **Docker and Docker Compose**: Optional, for OpenWebUI.
@@ -279,18 +276,12 @@ Before beginning the setup process, ensure you have:
    ollama serve
    ```
 
-5. **Download a Model**:
+5. **Download and run a model**:
 
    In a new terminal window, download a model (e.g., Llama 2):
 
    ```bash
-   ollama pull llama2
-   ```
-
-6. **Run the Model**:
-
-   ```bash
-   ollama run llama2
+   ollama run hermes3
    ```
 
 ### Installing OpenWebUI
