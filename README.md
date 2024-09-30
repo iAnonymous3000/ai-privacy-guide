@@ -105,7 +105,44 @@ Brave's **BYOM** feature allows users to connect Leo directly with their own AI 
 3. **Direct Connection**: Data stays between the browser and your model.
 4. **Wide Model Compatibility**: Supports various open-source AI models.
 
-For detailed setup instructions, see the [Setting Up Self-Hosted AI on Linux](#setting-up-self-hosted-ai-on-linux) section.
+For setting up BYOM on all supported platforms, follow these steps:
+
+# - Ollama:
+
+If you haven't already set up ollama download it here:
+
+Linux and Mac: [ollama](https://ollama.com/)
+
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
+```
+
+Check if ollama is running:
+http://localhost:11434/
+![Ollama runnig](img/ollama_running.jpeg)
+
+And get a model if you haven't already.
+
+(I recommend using a smaller model for BYOM since it gets context from the site you are summarizing so it's less prone to hallucination.)
+```bash
+ollama run qwen2.5:3b
+```
+
+Connect your model to **Brave**.
+
+![Ollama runnig](img/ollama_byom.png)
+
+*If you installed another model and you are not sure what its called you can run ```ollama list``` to see all available models.*
+
+![Ollama runnig](img/obt.png)
+
+Good to know:
+
+Label: You can "Label"/Name the model whatever you want in Brave.
+
+Model request name: Use the exact name of the model as listed by Ollama.
+
+Server endpoint: That's always http://localhost:11434/v1/chat/completions
 
 ### Venice AI
 
@@ -279,18 +316,12 @@ Before beginning the setup process, ensure you have:
    ollama serve
    ```
 
-5. **Download a Model**:
+5. **Download and run Model**:
 
-   In a new terminal window, download a model (e.g., Llama 2):
-
-   ```bash
-   ollama pull llama2
-   ```
-
-6. **Run the Model**:
+   In a new terminal window, download a model (e.g., Hermes3):
 
    ```bash
-   ollama run llama2
+   ollama run hermes3:latest
    ```
 
 ### Installing OpenWebUI
