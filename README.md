@@ -118,23 +118,25 @@ curl -fsSL https://ollama.com/install.sh | sh
 ```
 
 Check if ollama is running:
-http://localhost:11434/
-![Ollama runnig](img/ollama_running.jpeg)
+[localhost:11434](http://localhost:11434)
+
+![ollama_running](https://github.com/user-attachments/assets/5f1d00d0-f88f-48a7-9c76-8d4f2ee36665)
 
 And get a model if you haven't already.
 
-(I recommend using a smaller model for BYOM since it gets context from the site you are summarizing so it's less prone to hallucination.)
+(We recommend using a smaller model for BYOM since it gets context from the site you are summarizing so it's less prone to hallucination.)
 ```bash
 ollama run qwen2.5:3b
 ```
 
 Connect your model to **Brave**.
 
-![Ollama runnig](img/ollama_byom.png)
+![ollama_byom](https://github.com/user-attachments/assets/bf327b07-8322-4906-bf2a-003fb71c10df)
+
 
 *If you installed another model and you are not sure what its called you can run ```ollama list``` to see all available models.*
+![obt](https://github.com/user-attachments/assets/7d6de5ea-1b78-4845-991f-4245446b3d0b)
 
-![Ollama runnig](img/obt.png)
 
 Good to know:
 
@@ -142,7 +144,7 @@ Label: You can "Label"/Name the model whatever you want in Brave.
 
 Model request name: Use the exact name of the model as listed by Ollama.
 
-Server endpoint: That's always http://localhost:11434/v1/chat/completions
+Server endpoint: That's always [localhost:11434/v1/chat/completions](http://localhost:11434/v1/chat/completions)
 
 ### Venice AI
 
@@ -430,7 +432,7 @@ Before beginning the setup process, ensure you have:
 
 4. **Interact with Your AI Model**:
 
-   - Select the model you downloaded (e.g., Llama 2).
+   - Select the model you downloaded.
    - Start a conversation by typing in the input box.
 
 ### Troubleshooting
